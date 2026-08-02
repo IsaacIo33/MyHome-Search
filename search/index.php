@@ -21,7 +21,7 @@
         </a>
     </div>
 
-    <form action="/MyHome/search" method="get">
+    <form action="index.php" method="get">
         <input type="search" id="searchBar" placeholder="Search..." name="q" value="<?php echo $_GET["q"]; ?>">
         <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
     </form>
