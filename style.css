@@ -1,0 +1,28 @@
+        body {
+            font-family: sans-serif;
+            cursor: default;
+            text-align:center;
+        }
+
+        #searchBar {
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px lightgray;
+            font-size:2rem;
+            border: none;
+            width: 80%;
+            padding: 10px;
+            outline:none;
+        }
+        
+        #searchButton {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+            border: none;
+        }
+
+        #searchButton:active {
+            outline: 3px solid cornflowerblue;
+        }
