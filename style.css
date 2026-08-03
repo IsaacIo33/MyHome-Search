@@ -21,8 +21,10 @@
             color: white;
             font-size: 2rem;
             border: none;
+            transition:0.5s;
         }
 
         #searchButton:active {
             outline: 3px solid cornflowerblue;
+            border:2px solid darkblue;
         }
