@@ -76,8 +76,11 @@ $html
     for (let i = 0; i < results.length; i++) {
         let element = results[i];
         document.getElementById("results-container").innerHTML+=`
-        <img src="${element.querySelector(".y-img").src}" alt="Favicon" height="15">
-        <a href="${element.querySelector(".va-top").href}" class="pageLink">${element.querySelector(".fw-500").innerText}</a><br><p>${element.querySelector(".fz-14").innerText}</p><br><br>`;
+        <div style="display:flex; justify-content:center; align-items:center; padding:0; margin:0;">
+        <img src="${element.querySelector(".s-img").src}" alt="Favicon" height="20" style="margin:4px;">
+        <a href="${element.querySelector(".va-top").href}" class="pageLink">${element.querySelector(".fw-500").innerText}</a><br>
+        </div>
+        <p>${element.querySelector(".fz-14").innerText}</p><br><br>`;
     }
 
     document.body.innerHTML+="</div>";
