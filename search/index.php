@@ -80,6 +80,7 @@ $html
         <img src="${element.querySelector(".s-img").src}" alt="Favicon" height="20" style="margin:4px;">
         <a href="${element.querySelector(".va-top").href}" class="pageLink">${element.querySelector(".fw-500").innerText}</a><br>
         </div>
+        <span style="color:lightgray;">${element.querySelector(".va-top").href}</span>
         <p>${element.querySelector(".fz-14").innerText}</p><br><br>`;
     }
 
