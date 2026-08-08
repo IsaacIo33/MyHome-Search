@@ -18,10 +18,16 @@
             text-decoration: none;
             background-color: white;
         }
+
+        #dateHeading {
+            font-size: 3rem;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="MyHome" height="150">
+    <!-- <img src="logo.png" alt="MyHome" height="150"> -->
+    <h1 id="dateHeading"><span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span> <span id="ampm"></span></h1>
     <form action="search" method="get">
         <input type="search" id="searchBar" placeholder="Search..." name="q">
         <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
