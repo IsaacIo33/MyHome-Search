@@ -21,7 +21,7 @@
         </a>
     </div>
 
-    <form action="index.php" method="get">
+    <form action="../search.php" method="get">
         <input type="search" id="searchBar" placeholder="Search..." name="q" value="<?php echo $_GET["q"]; ?>">
         <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
     </form>
@@ -89,6 +89,10 @@ $html
 
     document.getElementById("content").outerHTML='';
     document.getElementById("loadingGif").outerHTML='';
+
+    if (document.getElementById("results-container").innerHTML == ""){
+        document.getElementById("results-container").innerHTML = "<b>No Search Results found...</b>";
+    }
 
 
 
