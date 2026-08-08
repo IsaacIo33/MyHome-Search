@@ -12,14 +12,22 @@ function update(){
     date = new Date();
     let hours = date.getHours();
     let ampm = "AM";
+    let minutes = date.getMinutes();
 
     if (hours >= 12){
         ampm = "PM";
         hours -= 12;
+        if (hours == 0){
+            hours = 12;
+        }
+    }
+
+    if (minutes < 10){
+        minutes = "0"+minutes;
     }
 
     hoursEl.innerText = hours;
-    minutesEl.innerText = date.getMinutes();
+    minutesEl.innerText = minutes;
     secondsEl.innerText = date.getSeconds();
     ampmEl.innerText = ampm;
 }
